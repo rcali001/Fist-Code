@@ -29,8 +29,8 @@ def isWinner(bo, le):
            (bo[4] == le and bo[5] == le and bo[6] == le) or\
            (bo[1] == le and bo[2] == le and bo[3] == le) or\
            (bo[1] == le and bo[4] == le and bo[7] == le) or\
-           (bo[2] == le and bo[5] == le and bo[5] == le) or\
-           (bo[3] == le and bo[6] == le and bo[6] == le) or\
+           (bo[2] == le and bo[5] == le and bo[8] == le) or\
+           (bo[3] == le and bo[6] == le and bo[9] == le) or\
            (bo[1] == le and bo[5] == le and bo[9] == le) or\
            (bo[3] == le and bo[5] == le and bo[7] == le))
 
@@ -134,10 +134,8 @@ while True:
         print('--------------------------------------')
         main()
 
-       else:
+    else:
         answer.lower() == 'n' or answer.lower() == 'no'
         print('Thanks for playing! Hope to see you play another game of TIC TAC TOE in the future!!')
     #else:
         break
-        
-        
